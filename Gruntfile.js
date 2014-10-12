@@ -11,9 +11,16 @@ module.exports = function (grunt) {
     },
     watch: {
       project: {
-        files: ['public/**/*.js', 'public/**/*.html', 'public/**/*.json', 'public/**/*.css'],
+        files: ['public/**/*.js', 'public/**/*.html', 'public/**/*.json', 'public/ccs/**/*.css', 'public/Stylus/**/*.styl'],
         options: {
           livereload: true
+        }
+      }
+    },
+    Stylus: {
+      compile: {    
+        files: {
+          'public/css/estilos.css' : 'public/Stylus/estilos.styl'
         }
       }
     }
@@ -21,7 +28,8 @@ module.exports = function (grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-stylus');
 
-  grunt.registerTask('default', ['connect', 'watch']);
+  grunt.registerTask('default', ['connect', 'watch', 'stylus']);
 
 };
