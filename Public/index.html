@@ -5,16 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SportEvents</title>
-    <!-- Bootstrap -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-   	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-		<!--Angular js y Controles!-->
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
-  	<script src="js/app.js"></script>
-		<!--Style!-->
+    <!-- le Style -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+		<!--!-->
   	<link rel="stylesheet" href="Stylus/estilos.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -36,7 +29,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">SporEvents</a>
+				<a class="navbar-brand" href="#" ng-click="tabs.selectTab(1)">SporEvents</a>
 			</div>
 			<!--Menu con las opciones de navegacion!-->
 			<div class="collapse navbar-collapse" id="NavColapse">
@@ -52,111 +45,23 @@
 		</div>
 	</nav>
 	<!--Contenedor principal!-->
-	<section class="container-fluid" ng-controller="SedesControler as sedesCtrl">
+	<section class="container-fluid">
 		<!--Primer tab con el contenido principal!-->
 		<article ng-show="tabs.tab===1" class="sede text-center">
-			<!--Titulo!-->
-			<h1 class="Titulo page-header">
-				{{sedesCtrl.Sede.Nombre}}
-				<span class="pull-right label label-primary"># {{sedesCtrl.Sede.id}}</span>
-			</h1>
-			<!--Imagen de la sede!-->
-			<figure class="col-md-3">
-				<img src={{sedesCtrl.Sede.imageUrl}}  width="100" height="100" alt="">
-			</figure>
-			<!--Todo el contenido de una sede!-->
-			<div class="menuInterior col-md-9">
-				<h2 class="">
-					Deportes
-				</h2>
-				<div class="panel panel-default">
-					<div class="panel -heading">{{sedesCtrl.Sede.Deportes.Nombre | uppercase}}
-					</div>
-					<div class="panel-body">
-						<img src="{{sedesCtrl.Sede.Deportes.imageUrl}}" alt="" width="50" height="50">
-						<p>{{sedesCtrl.Sede.Deportes.info}}</p>
-					</div>
-					<table class="table table-bordered">
-						<tr>
-							<td>
-								<label>Ramas</label>
-							</td>
-							<td>
-								<span ng-repeat="ramas in sedesCtrl.Sede.Deportes.ramas" class="label rama-{{ramas | lowercase}}">{{ramas}}</span>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<label for="">Categorias</label>
-							</td>
-							<td>
-								<span ng-repeat="Nombre in sedesCtrl.Sede.Deportes.Categorias.Nombre">{{Nombre}}</span>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<label for="">informacion</label>
-							</td>
-							<td>
-								<span>{{sedesCtrl.Sede.Deportes.Categorias.info}}</span>
-							</td>
-						</tr>
-					</table>
-				</div>
-			<div class="opciones">
-				<a href="" class="icon-file gris action"></a>
-				<a href="" class="icon-eye gris action"></a>
-			</div>				
-			</div>			
-		</article>
-		<!--Segundo tab de Conocenos!-->
-		<article ng-show="tabs.tab === 2" class="jumbotron">
-			<h1>Soy el tab de Conocenos</h1>
-		</article>
-		<!--Tercer Tab de Mi Registro!-->
-		<article ng-show = "tabs.tab === 3" class="jumbotron">
-			<h1>soy el tab de Mi Registro</h1>
-		</article>
-		<!--Formulario con angular js!-->
-		<article ng-show = "tabs.tab === 4" ng-controller="CommentsController as cmtsCtrl">-
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h1 class="panel-title">Comments<button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button></h1>
-				</div>
-				<div class="panel-body">
-					<form name="commentsForm" role="form" ng-submit="cmtsCtrl.addComment()" class="form-horizontal" novalidate>
-						<div class="form-gruop">
-							<div class="col-md-6">
-								<textarea ng-model="cmtsCtrl.comment.body" class="form-control" placeholder="Escribenos un comentario" rows="10" required></textarea>
-							</div>
-							<div class="col-md-6">
-								<input class="form-control" ng-model="cmtsCtrl.comment.email"  ng-disabled="cmtsCtrl.comment.anonymous" type="email"  placeholder="Dejanos saber quien eres" ng-required="!cmtsCtrl.comment.anonymous">
-								<label>
-									<input ng-model="cmtsCtrl.comment.anonymous" ng-change="cmtsCtrl.anonymousChanged()" id="Anonymous" type="checkbox">
-									Anonymous
-								</label>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<button type="submit" class="btn btn-danger">
-								Comment
-							</button>
-						</div>
-					</form>
-				</div>
-					<div ng-if="!commentsForm.$valid" class="alert alert-danger">
-						Formulario invalido
-					</div>
-				<blockquote class="col-md 6" ng-repeat="comment in cmtsCtrl.comments">
-					<p>
-						{{comment.body}}
-					</p>
-					<footer>
-						comment by <a ng-if="!comment.anonymous" href="mailto:{{comment.email}}">{{comment.email}}</a> <em ng-if="comment.anonymous">Anonymous</em> on <span>{{comment.date | date : 'medium'}}</span>
-					</footer>
-				</blockquote>
-			</div>
+			<!--vista con el contenido de la sede!-->
+			<div ng-view=""></div>
 		</article>
 	</section>
+
+ 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/lib/bootstrap.min.js"></script>
+	<!--Angular js y Controles!-->
+	<script src="js/lib/angular.min.js"></script>
+	<script src="js/lib/angular-route.min.js"></script>
+  	<script src="js/app.js"></script>
+	<script src="js/controllers.js"></script>
+	<script src="js/directives.js"></script>
 </body> 
 </html>

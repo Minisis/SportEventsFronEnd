@@ -1,53 +1,30 @@
 (function (){
-	var app = angular.module('SportEvents', []);
+	var app = angular.module('SportEvents', [
+			'ngRoute',
+			'sportEvents.controllers',
+			'sportEvents.directives'
+		]);
 
-	app.controller('SedesControler', function () {
-		this.Sede = {
-			id: "01",
-			Nombre: "Colima",
-			imageUrl: "http://deporte.pri.org.mx/img/soporte/Fut7Home.png",
-			Status: "A",
-			Deportes: {
-				Nombre: "Futbol",
-				Status: "A",
-				imageUrl: "http://www.lssc.k12.in.us/highschool/English/Hayden/Creative%20Writing/Nathan/Webpage/soccer%20ball.jpg",
-				info: "La competencia de futbol mas grande de mexico",
-				ramas: ["Varonil", "Femenil"],
-				Categorias: {
-					Nombre: "18 +",
-					Status: "A",
-					info: "Categoria de 18 anios y el gran premio es..."
-				},	 
-			},
-		};
-	});
+	app.config(['$routeProvider', function ($routeProvider){
 
-	app.controller('TabsController', function(){
-		this.tab = 4
+		$routeProvider
+			.when('/',{
+				templateUrl: 'views/sedes.html',
+				controller: 'SedesControler',
+				controllerAs: 'sedesCtrl'
+			})
+			.when('/comments',{
+				templateUrl: 'views/comments.html',
+				controller: 'CommentsController',
+				controllerAs: 'cmtsCtrl'
+			})
+			.when ('/todo',{
+				templateUrl: 'views/todo.html',
+				controller: 'SedesTodoController',
+			})
+			.otherwise({
+				redirectTo: '/',
+			});
 
-		this.selectTab = function (tab){
-			this.tab = tab;
-		};
-	});
-
-	app.controller ('CommentsController', function(){
-		this.comments = [];
-		this.comment = {};
-		this.show = false;
-
-		this.anonymousChanged = function () {
-			if (this.comment.anonymous){
-				this.comment.email = "";
-			}
-		};
-
-		this.addComment = function (){
-			this.comment.date = Date.now();
-			this.comments.push(this.comment);
-			this.comment = {};
-		};
-
-	});
-
-
+	}]);
 })();

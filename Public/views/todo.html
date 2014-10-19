@@ -1,0 +1,57 @@
+<div ng-repeat="sede in sedes">
+	<!--Titulo!-->
+	<h1 class="page-header">
+		{{sede.Nombre}}
+		<span class="pull-right label label-primary"># {{sede.id}}</span>
+	</h1>
+	<!--Imagen de la sede!-->
+	<figure class="col-md-3">
+		<img src={{sede.imgUrl}}  width="100" height="100" alt="">
+	</figure>
+	<!--Todo el contenido de una sede!-->
+	<div class="menuInterior col-md-9">
+		<h2 class="">
+			Deportes
+		</h2>
+		<div class="panel panel-default">
+			<div class="panel -heading">{{sede.Deportes.Nombre | uppercase}}
+			</div>
+			<div class="panel-body">
+				<img src="{{sede.Deportes.imgUrl}}" alt="" width="50" height="50">
+				<p>{{sede.Deportes.info}}</p>
+			</div>
+			<table class="table table-bordered">
+				<tr>
+					<td>
+						<label>Ramas</label>
+					</td>
+					<td>
+						<span ng-repeat="ramas in sede.Deportes.ramas" class="label rama-{{ramas | lowercase}}">{{ramas}}</span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="">Categorias</label>
+					</td>
+					<td>
+						<span ng-repeat="Nombre in sede.Deportes.Categorias.Nombre">{{Nombre}}</span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="">informacion</label>
+					</td>
+					<td>
+						<span>{{sede.Deportes.Categorias.Info}}</span>
+					</td>
+				</tr>
+			</table>
+		</div>
+	<div class="opciones">
+		<a href="" class="icon-file gris action"></a>
+		<a href="" class="icon-eye gris action"></a>
+	</div>				
+	</div>		
+</div>
+
+
