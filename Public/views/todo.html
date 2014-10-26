@@ -1,10 +1,11 @@
 <titulo-todo-sedes></titulo-todo-sedes>
+<small class="col-md-offset-10"> <span class="glyphicon glyphicon-ok-circle"></span> showing <span class="badge">{{sedes.length}} </span> Sedes</small>
 <div>
 	<div ng-repeat="sede in sedes">
 		<!--Titulo!-->
 		<h1 class="page-header">
 			{{sede.name}}
-			<span class="pull-right label label-success"># {{sede.id}}</span>
+			<a class="pull-right btn btn-danger" href="/#sede/{{sede.id}}">Ver mas</a>
 		</h1>
 		<p class="text-center">
 			<small>{{sede.info}}</small>
@@ -24,13 +25,10 @@
 						</p>
 						<div class="text-center">
 							<label for="">ramas:</label>
-							<label for="" class="label marginRama {{rama[0] | lowercase}}" ng-repeat="rama in evento.branches">{{rama}}</label>
+							<label for=""  ng-repeat="rama in evento.branches" class="label marginRama  rama-{{rama | lowercase}}">{{rama}}</label>
 						</div>	
 							<label for="">Categorias:</label>					
 							<label for="" ng-repeat="categorias in evento.categories" class="label label-primary categoria{{categorias.id}}">{{categorias.name}}</label>
-					</div>
-					<div class="panel-footer">
-						<a href="/#sede/{{sede.id}}">Ver detalles</a>
 					</div>
 				</div>
 			</div>			

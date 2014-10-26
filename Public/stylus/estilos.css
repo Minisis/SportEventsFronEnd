@@ -34,10 +34,10 @@
   content: "\f16a";
 }
 .rama-varonil {
-  background-color: #00f;
+  background: rgb(229, 115, 115);;
 }
 .rama-femenil {
-  background-color: #ffc0cb;
+  background: rgb(250, 159, 175);
 }
 .icono {
   font-size: 2em;
@@ -48,13 +48,7 @@
 .ng-valid.ng-dirty{
   border-color: green;
 }
-.v{
-  background: rgb(229, 115, 115);;
-}
-.f{
-   margin-right: 1em;
-    background: rgb(250, 159, 175);
-}
+
 .marginRama{
   margin: .5em;
 }

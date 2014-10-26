@@ -19,8 +19,6 @@
 			})
 			.when('/comments',{
 				templateUrl: 'views/comments.html',
-				controller: 'CommentsController',
-				controllerAs: 'cmtsCtrl'
 			})
 			.otherwise({
 				redirectTo: '/',
