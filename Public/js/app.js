@@ -13,15 +13,14 @@
 				templateUrl: 'views/todo.html',
 				controller: 'SedesTodoController',
 			})
+			.when ('/sede/:sedeid',{
+				templateUrl: 'views/sede.html',
+				controller: 'sedeController',
+			})
 			.when('/comments',{
 				templateUrl: 'views/comments.html',
 				controller: 'CommentsController',
 				controllerAs: 'cmtsCtrl'
-			})
-			.when ('/sede/:sedeid/evento/:eventoid',{
-				templateUrl: 'views/sede.html',
-				controllers: 'SedesControler',
-				controllerAs: 'sedesCtrl'
 			})
 			.otherwise({
 				redirectTo: '/',

@@ -8,6 +8,16 @@
 		});
 	}])
 
+	.controller('sedeController', ['$scope', '$routeParams', 'sedeService', function($scope, $routeParams, sedeService){
+		var id = parseInt($routeParams.sedeid);
+		$scope.sede = {};
+
+		sedeService.byidSede(id)
+			.then(function (result){
+				$scope.sedes = result;
+			});
+	}])
+
 .controller('TabsController', function(){
 	this.tab = 1
 

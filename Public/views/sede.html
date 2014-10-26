@@ -1,28 +1,28 @@
 	<!--Titulo!-->
 	<div class="jumbotron">
 		<h1 class="text-center">
-			Aqui se veran todos los detalles de una sede
+			Aqui se veran todos los detalles de una sedes
 		</h1>
 	</div>
 	<h1 class="Titulo page-header">
-		{{sedesCtrl.Sede.Nombre}}
-		<span class="pull-right label label-primary"># {{sedesCtrl.Sede.id}}</span>
+		{{sedes.name}}
+		<span class="pull-right label label-primary"># {{sedes.id}}</span>
 	</h1>
-	<!--Imagen de la sede!-->
+	<!--Imagen de la sedes!-->
 	<figure class="col-md-3">
-		<img src={{sedesCtrl.Sede.imageUrl}}  width="100" height="100" alt="">
+		<img src={{sedes.imageUrl}}  width="100" height="100" alt="">
 	</figure>
-	<!--Todo el contenido de una sede!-->
+	<!--Todo el contenido de una sedes!-->
 	<div class="menuInterior col-md-9">
 		<h2 class="">
 			Deportes
 		</h2>
 		<div class="panel panel-default">
-			<div class="panel -heading">{{sedesCtrl.Sede.Deportes.Nombre | uppercase}}
+			<div class="panel -heading">{{sedes.Deportes.Nombre | uppercase}}
 			</div>
 			<div class="panel-body">
-				<img src="{{sedesCtrl.Sede.Deportes.imageUrl}}" alt="" width="50" height="50">
-				<p>{{sedesCtrl.Sede.Deportes.info}}</p>
+				<img src="{{sedes.Deportes.imageUrl}}" alt="" width="50" height="50">
+				<p>{{sedes.Deportes.info}}</p>
 			</div>
 			<table class="table table-bordered">
 				<tr>
@@ -30,7 +30,7 @@
 						<label>Ramas</label>
 					</td>
 					<td>
-						<span ng-repeat="ramas in sedesCtrl.Sede.Deportes.ramas" class="label rama-{{ramas | lowercase}}">{{ramas}}</span>
+						<span ng-repeat="ramas in sedes.Deportes.ramas" class="label rama-{{ramas | lowercase}}">{{ramas}}</span>
 					</td>
 				</tr>
 				<tr>
@@ -38,7 +38,7 @@
 						<label for="">Categorias</label>
 					</td>
 					<td>
-						<span ng-repeat="Nombre in sedesCtrl.Sede.Deportes.Categorias.Nombre">{{Nombre}}</span>
+						<span ng-repeat="Nombre in sedes.Deportes.Categorias.Nombre">{{Nombre}}</span>
 					</td>
 				</tr>
 				<tr>
@@ -46,7 +46,7 @@
 						<label for="">informacion</label>
 					</td>
 					<td>
-						<span>{{sedesCtrl.Sede.Deportes.Categorias.info}}</span>
+						<span>{{sedes.Deportes.Categorias.info}}</span>
 					</td>
 				</tr>
 			</table>
