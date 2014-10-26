@@ -49,27 +49,47 @@
   border-color: green;
 }
 .v{
-  background: red;
+  background: rgb(229, 115, 115);;
 }
 .f{
    margin-right: 1em;
-    background: pink;
+    background: rgb(250, 159, 175);
 }
 .marginRama{
   margin: .5em;
 }
 .categoria2{
   background: rgb(207, 101, 189);
+  display: inline-block;
+  margin: .5em;
 }
 .categoria3{
   background: rgb(161, 81, 148);
+  display: inline-block;
+  margin: .5em;
 }
 .categoria4{
   background: rgb(119, 91, 115);
+  display: inline-block;
+  margin: .5em;
 }
 .categoria5{
   background: red;
+  display: inline-block;
+  margin: .5em;
 }
 .categoria6{
   background: green;
+  display: inline-block;
+  margin: .5em;
 }
+.rama{
+  margin: .5em;
+}
+.jumbotron-color{
+  background-color: #EFF8F9;
+}
+
+
+
+

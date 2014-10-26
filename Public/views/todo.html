@@ -1,39 +1,35 @@
 <titulo-todo-sedes></titulo-todo-sedes>
-<div class="container">
-	<div class="row" ng-repeat="sede in sedes">
+<div>
+	<div ng-repeat="sede in sedes">
 		<!--Titulo!-->
 		<h1 class="page-header">
 			{{sede.name}}
-			<span class="pull-right label label-primary"># {{sede.id}}</span>
+			<span class="pull-right label label-success"># {{sede.id}}</span>
 		</h1>
-		<p>
+		<p class="text-center">
 			<small>{{sede.info}}</small>
 		</p>
 		<!--Todo el contenido de una sede!-->
 		<div class="row">
 			<div class="col-md-4" ng-repeat="evento in sede.events">
 				<div class="panel panel-default">
-					<div class="panel panel-heading">
+					<div class="panel panel-heading text-center">
 						<h5>
 							{{evento.name | uppercase}}
 						</h5>
 					</div>
-					<div class="panel panel-body">
+					<div class="panel panel-body text-center">
 						<p>
 							{{evento.info}}
 						</p>
-						<div class="row">
+						<div class="text-center">
 							<label for="">ramas:</label>
 							<label for="" class="label marginRama {{rama[0] | lowercase}}" ng-repeat="rama in evento.branches">{{rama}}</label>
 						</div>	
-						<div class="row">
-							<div class="row">
-								<label for="">Categorias:</label>	
-							</div>
-							<div class="row">	
-								<label for="" ng-repeat="categorias in evento.categories" class="label label-primary categoria{{categorias.id}}">{{categorias.name}} <br></label>
-							</div>
-						</div>
+							<label for="">Categorias:</label>					
+							<label for="" ng-repeat="categorias in evento.categories" class="label label-primary categoria{{categorias.id}}">{{categorias.name}}</label>
+					</div>
+					<div class="panel-footer">
 						<a href="/#sede/{{sede.id}}/evento/{{evento.id}}">Ver detalles</a>
 					</div>
 				</div>

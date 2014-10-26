@@ -1,13 +1,6 @@
 (function (){
 	angular.module('sportEvents.directives', [])
 
-	.directive('sedesData', function(){
-		return{
-			restrict: 'E',
-			templateUrl: 'partials/sedes-data.html',
-		};
-	})
-
 	.directive('tituloTodoSedes', function(){
 		return{
 			restrict: 'E',

@@ -3,29 +3,25 @@
 			'ngRoute',
 			'sportEvents.controllers',
 			'sportEvents.directives',
+			'sedes.services',
 		]);
 
 	app.config(['$routeProvider', function ($routeProvider){
 
 		$routeProvider
-			.when('/sedes',{
-				templateUrl: 'views/sedes.html',
-				controller: 'SedesControler',
-				controllerAs: 'sedesCtrl'
+			.when ('/',{
+				templateUrl: 'views/todo.html',
+				controller: 'SedesTodoController',
 			})
 			.when('/comments',{
 				templateUrl: 'views/comments.html',
 				controller: 'CommentsController',
 				controllerAs: 'cmtsCtrl'
 			})
-			.when ('/',{
-				templateUrl: 'views/todo.html',
-				controller: 'SedesTodoController',
-			})
 			.when ('/sede/:sedeid/evento/:eventoid',{
-				templateUrl: 'views/comments.html',
-				controllers: 'CommentsController',
-				controllerAs: 'cmtsCtrl'
+				templateUrl: 'views/sede.html',
+				controllers: 'SedesControler',
+				controllerAs: 'sedesCtrl'
 			})
 			.otherwise({
 				redirectTo: '/',
