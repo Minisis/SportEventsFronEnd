@@ -48,3 +48,28 @@
 .ng-valid.ng-dirty{
   border-color: green;
 }
+.v{
+  background: red;
+}
+.f{
+   margin-right: 1em;
+    background: pink;
+}
+.marginRama{
+  margin: .5em;
+}
+.categoria2{
+  background: rgb(207, 101, 189);
+}
+.categoria3{
+  background: rgb(161, 81, 148);
+}
+.categoria4{
+  background: rgb(119, 91, 115);
+}
+.categoria5{
+  background: red;
+}
+.categoria6{
+  background: green;
+}

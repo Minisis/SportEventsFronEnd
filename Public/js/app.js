@@ -2,13 +2,13 @@
 	var app = angular.module('SportEvents', [
 			'ngRoute',
 			'sportEvents.controllers',
-			'sportEvents.directives'
+			'sportEvents.directives',
 		]);
 
 	app.config(['$routeProvider', function ($routeProvider){
 
 		$routeProvider
-			.when('/',{
+			.when('/sedes',{
 				templateUrl: 'views/sedes.html',
 				controller: 'SedesControler',
 				controllerAs: 'sedesCtrl'
@@ -18,13 +18,18 @@
 				controller: 'CommentsController',
 				controllerAs: 'cmtsCtrl'
 			})
-			.when ('/todo',{
+			.when ('/',{
 				templateUrl: 'views/todo.html',
 				controller: 'SedesTodoController',
+			})
+			.when ('/sede/:sedeid/evento/:eventoid',{
+				templateUrl: 'views/comments.html',
+				controllers: 'CommentsController',
+				controllerAs: 'cmtsCtrl'
 			})
 			.otherwise({
 				redirectTo: '/',
 			});
 
 	}]);
-})();
+})(); 

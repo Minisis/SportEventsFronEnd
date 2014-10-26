@@ -5,13 +5,12 @@
 	.controller('SedesTodoController', ['$scope', '$http', function($scope, $http){
 		$scope.sedes = [];
 
-		$http.get('/sedes.json')
-			.success(function(data){
-				$scope.sedes = data;
+		$http.get('/todoSedes.json')
+			.success(function(result){
+				console.log(result);
+				$scope.sedes = result.data;
 			});		
 	}])
-
-
 	.controller('SedesControler', function () {
 	this.Sede = {
 		id: "01",
@@ -58,17 +57,5 @@
 		this.comment = {};
 		};
 })
-
-
-
-
-
-
-
-
-
-
-
-
 
 })();

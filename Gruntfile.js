@@ -17,10 +17,10 @@ module.exports = function (grunt) {
         }
       }
     },
-    Stylus: {
+    stylus: {
       compile: {    
         files: {
-          'public/css/estilos.css' : 'public/Stylus/estilos.styl'
+          '/css/estilos.css' : 'public/Stylus/estilos.styl'
         }
       }
     }
@@ -30,6 +30,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-stylus');
 
-  grunt.registerTask('default', ['connect', 'watch', 'stylus']);
+  grunt.registerTask('default', ['connect', 'watch']);
 
 };

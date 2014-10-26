@@ -8,6 +8,13 @@
 		};
 	})
 
+	.directive('tituloTodoSedes', function(){
+		return{
+			restrict: 'E',
+			templateUrl: 'partials/titulo-sedes.html',
+		};
+	})
+
 	.directive('sedesComments',function(){
 		return{
 			restrict: 'E',
