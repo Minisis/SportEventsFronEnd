@@ -23,12 +23,14 @@
 			</div>
 		</form>
 	</div>
+	<div style="padding-top:1.5em">
 		<div ng-if="commentsForm.$valid" class="alert alert-success">
 			Formulario valido
 		</div>
 		<div ng-if="!commentsForm.$valid" class="alert alert-danger">
 			Formulario invalido
 		</div>
+	</div>
 	<blockquote class="col-md 6" ng-repeat="comment in cmtsCtrl.comments">
 		<p>
 			{{comment.body}}

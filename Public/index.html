@@ -29,24 +29,23 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#" ng-click="tabs.selectTab(1)">Events</a>
+				<a class="navbar-brand" href="#/" ng-click="tabs.selectTab(1)">Events</a>
 			</div>
 			<!--Menu con las opciones de navegacion!-->
 			<div class="collapse navbar-collapse" id="NavColapse">
 				<ul class="nav navbar-nav">
-					<li ng-class="{active : tabs.tab === 1}"><a href="#"  ng-click="tabs.selectTab(1)"><span class="glyphicon glyphicon-folder-open"></span></a></li>
-					<li ng-class="{active : tabs.tab === 2}"><a href="#" ng-click="tabs.selectTab(2)">Conocenos</a></li>
-					<li ng-class="{active : tabs.tab === 3}"><a href="#"  ng-click="tabs.selectTab(3)">Mi Registro</a></li>
+					<li ng-class="{active : tabs.tab === 1}"><a href="#/"  ng-click="tabs.selectTab(1)"><span class="glyphicon glyphicon-folder-open"></span></a></li>
+					<li ng-class="{active : tabs.tab === 3}"><a href="/#registro"  ng-click="tabs.selectTab(3)">Mi Registro</a></li>
+					<li ng-class="{active : tabs.tab === 4}"><a href="/#comments" ng-click="tabs.selectTab(4)">Comentarios</a></li>
+					<li ng-class="{active : tabs.tab === 2}"><a href="#/conocenos" ng-click="tabs.selectTab(2)">Team</a></li>
 					<li><a href="#" class="icono icon-twitter hidden-xs"></a></li>
 					<li><a href="https://github.com/Minisis"  TARGET="_blank" class="icono icon-github"></a></li>
-					<li ng-class="{active : tabs.tab === 4}"><a href="/#comments" ng-click="tabs.selectTab(4)">Comentarios</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 	<!--Contenedor principal!-->
 	<section class="container">
-		<!--vista con el contenido de la sede!-->
 		<div ng-view=""></div>
 	</section>
  	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

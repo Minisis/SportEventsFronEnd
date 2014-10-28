@@ -20,6 +20,12 @@
 			.when('/comments',{
 				templateUrl: 'views/comments.html',
 			})
+			.when ('/registro',{
+				templateUrl:'views/registro.html',
+			})
+			.when ('/conocenos',{
+				templateUrl: 'views/conocenos.html'
+			})
 			.otherwise({
 				redirectTo: '/',
 			});
