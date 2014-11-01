@@ -1,5 +1,13 @@
+
+<div ng-if="!sedes"class="error">
+	<div class="jumbotron">
+		<h1 class="text-center">
+			 404 sede not found
+		</h1>
+	</div>
+</div>
 <!--Titulo!-->
-<h1 class="page-header text-center">
+<h1 ng-if="sedes"  class="page-header text-center">
 	{{sedes.name | uppercase}}
 </h1>
 <!--Todo el contenido de una sedes!-->
@@ -37,3 +45,5 @@
 		</table>
 	</div>			
 </div>
+
+
