@@ -17,7 +17,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body ng-controller="TabsController as tabs">
+<body ng-controller="TabsController">
 	<!--Navigation!-->
 	<nav class="navbar navbar-default" role="navigation">
 		<div class="container-fluid">
@@ -29,15 +29,15 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#/" ng-click="tabs.selectTab(1)">Events</a>
+				<a class="navbar-brand" href="#/" ng-click="selectTab(1)">Events</a>
 			</div>
 			<!--Menu con las opciones de navegacion!-->
 			<div class="collapse navbar-collapse" id="NavColapse">
 				<ul class="nav navbar-nav">
-					<li ng-class="{active : tabs.tab === 1}"><a href="#/"  ng-click="tabs.selectTab(1)"><span class="glyphicon glyphicon-folder-open"></span></a></li>
-					<li ng-class="{active : tabs.tab === 3}"><a href="/#registro"  ng-click="tabs.selectTab(3)">Mi Registro</a></li>
-					<li ng-class="{active : tabs.tab === 4}"><a href="/#comments" ng-click="tabs.selectTab(4)">Comentarios</a></li>
-					<li ng-class="{active : tabs.tab === 2}"><a href="#/conocenos" ng-click="tabs.selectTab(2)">Team</a></li>
+					<li ng-class="{active : tab === 1}"><a href="#/"  ng-click="selectTab(1)"><span class="glyphicon glyphicon-folder-open"></span></a></li>
+					<li ng-class="{active : tab === 3}"><a href="/#registro"  ng-click="selectTab(3)">Mi Registro</a></li>
+					<li ng-class="{active : tab === 4}"><a href="/#comments" ng-click="selectTab(4)">Comentarios</a></li>
+					<li ng-class="{active : tab === 2}"><a href="#/conocenos" ng-click="selectTab(2)">Team</a></li>
 					<li><a href="#" class="icono icon-twitter hidden-xs"></a></li>
 					<li><a href="https://github.com/Minisis"  TARGET="_blank" class="icono icon-github"></a></li>
 				</ul>

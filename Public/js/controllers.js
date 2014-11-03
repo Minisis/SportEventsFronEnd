@@ -16,16 +16,16 @@
 		sedeService.byidSede(id)
 			.then(function (result){
 				console.log(result);
-				$rootScope.title=result.name;
+				$rootScope.title=result.name	;
 				$scope.sedes = result;
 			});
 	}])
 
-.controller('TabsController', function(){
-	/*this.tab = 1*/
+.controller('TabsController',['$scope', function($scope){
+	$scope.tab = 1
 
-	this.selectTab = function (tab){
-		this.tab = tab;
+	$scope.selectTab = function (tab){
+		$scope.tab = tab;
 	};
-})
+}])
 })();
