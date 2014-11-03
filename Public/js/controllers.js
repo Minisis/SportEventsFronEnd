@@ -2,19 +2,21 @@
 	angular.module('sportEvents.controllers', [])
 
 
-	.controller('SedesTodoController', ['$scope', 'sedeService', function($scope, sedeService){
+	.controller('SedesTodoController', ['$rootScope', '$scope', 'sedeService', function($rootScope,$scope, sedeService){
+		$rootScope.title = "";
 		sedeService.all().then( function (result){
  			$scope.sedes = result.data;
 		});
 	}])
 
-	.controller('sedeController', ['$scope', '$routeParams', 'sedeService', function($scope, $routeParams, sedeService){
+	.controller('sedeController', ['$rootScope', '$scope', '$routeParams', 'sedeService', function($rootScope, $scope, $routeParams, sedeService){
 		var id = parseInt($routeParams.sedeid);
 		$scope.sede = {};
 
 		sedeService.byidSede(id)
 			.then(function (result){
-				console.log(result)
+				console.log(result);
+				$rootScope.title=result.name;
 				$scope.sedes = result;
 			});
 	}])
