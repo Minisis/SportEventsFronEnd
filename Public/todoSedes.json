@@ -1,117 +1,431 @@
 {
-	"data": [
-		{
-			"id": 2,
-			"name": "San Luis Potosi",
-			"info": "Todos los registros tendran que ser entregados en la junta previa, la cual se llevara a cabo el dia 28 de diciembre del ano en curso, en las intalaciones del pri municipal",
-			"events": [{
-				"id": 3,
-				"name": "Natacion",
-				"info": "Soy una competencia de natacion ",
-				"imgurl": "http://st-listas.20minutos.es/images/2008-06/25082/321015_640px.jpg?1214508140",
-				"branches": ["Varonil","Femenil"],
-				"categories": []},
-		{
-			"id": 1,
-			"name": "Copa Ciclista",
-			"info": "La competencia de ciclistas mas grande de mexico",
-			"imgurl": null,
-			"branches": ["Varonil","Femenil"],
-			"categories": [{
-				"id": 2,
-				"name": "Categoria de 18 a 29",
-				"info": "la categoria para personas de 18 a 29 anos en la cual el premio es de 100mil varos"
-				},
-		{
-				"id": 3,
-				"name": "Categoria de 30 a 39 anos",
-				"info": "la categoria para personas mayores a 30 anos hasta 39 en la cual el primer lugar se podra llevar un premio de 200mil varos"
-				},
-		{
-				"id": 4,
-				"name": "Categoria de 40 y mayores",
-				"info": "la categoria en la que personas mayores de 40 anos podran competir por el primer lugar  el cual consta de 300mil varos"
-				},
-		{
-				"id": 4,
-				"name": "Categoria de 40 y mayores",
-				"info": "la categoria en la que personas mayores de 40 anos podran competir por el primer lugar  el cual consta de 300mil varos"
-				}
-]
-},
-{
-"id": 2,
-"name": "Copa Futbol",
-"info": "La competencia de futbol mas grande en mexico",
-"imgurl": null,
-"branches": [
-"Varonil",
-"Femenil"
-],
-"categories": []
-}
-]
-},
-{
-"id": 3,
-"name": "Colima",
-"info": "Una buena competencian en colima",
-"events": [
-{
-"id": 1,
-"name": "Copa Ciclista",
-"info": "La competencia de ciclistas mas grande de mexico",
-"imgurl": "https://notipesca.files.wordpress.com/2011/10/escudo-gob-colima-color1.jpg",
-"branches": [
-"Varonil",
-"Femenil"
-],
-"categories": [
-{
-"id": 2,
-"name": "Categoria de 18 a 29",
-"info": "la categoria para personas de 18 a 29 anos en la cual el premio es de 100mil varos"
-},
-{
-"id": 3,
-"name": "Categoria de 30 a 39 anos",
-"info": "la categoria para personas mayores a 30 anos hasta 39 en la cual el primer lugar se podra llevar un premio de 200mil varos"
-},
-{
-"id": 4,
-"name": "Categoria de 40 y mayores",
-"info": "la categoria en la que personas mayores de 40 anos podran competir por el primer lugar  el cual consta de 300mil varos"
-},
-{
-"id": 4,
-"name": "Categoria de 40 y mayores",
-"info": "la categoria en la que personas mayores de 40 anos podran competir por el primer lugar  el cual consta de 300mil varos"
-}
-]
-},
-{
-"id": 2,
-"name": "Copa Futbol",
-"info": "La competencia de futbol mas grande en mexico",
-"imgurl": null,
-"branches": [
-"Varonil",
-"Femenil"
-],
-"categories": []
-},
-{
-"id": 4,
-"name": "waterpolo",
-"info": "soy una competencia de waterpolo",
-"imgurl": "soy la imagen del polo acuatico",
-"branches": [
-"Varonil",
-"Femenil"
-],
-"categories": []
-}
-]
-}
-]
+  "data": [
+    {
+      "id": 4,
+      "name": "Campeche",
+      "info": "Campeche, officially Free and Sovereign State of Campeche, is one of the 31 states which, with the Federal District, comprise the 32 Federal Entities of Mexico.",
+      "events": [
+        
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Aguascalientes",
+      "info": "Todos los registros tendran que ser entregados en la junta previa, la cual se llevara a cabo el dia 28 de diciembre del ano en curso, en las intalaciones del pri municipal",
+      "events": [
+        
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Durango",
+      "info": "Durango es uno de los 31 estados que junto con el Distrito Federal conforman las 32 entidades federativas de México",
+      "events": [
+        
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Michoacan",
+      "info": "Michoacán de Ocampo, es uno de los 31 estados que, junto con el Distrito Federal, conforma las 32 entidades federativas de México.",
+      "events": [
+        
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Jalisco",
+      "info": "Jalisco es uno de los treinta y un estados que conforman junto con Distrito Federal, las treinta y dos entidades federativas de México. Se encuentra situado en la zona occidental del país.",
+      "events": [
+        
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Chihuaua",
+      "info": "Chihuahua es uno de los 31 estados que junto con el Distrito Federal conforman las 32 entidades federativas de México. Chihuahua se localiza al norte de México y tiene una superficie de 250 673 km², siendo el estado más extenso de México. ",
+      "events": [
+        
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Hidalgo",
+      "info": "Hidalgo es uno de los 31 estados que, junto con el Distrito Federal, conforman las 32 entidades federativas de México. Cuenta con 84 municipios, y su capital, y ciudad más poblada, es Pachuca de Soto.",
+      "events": [
+        
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Distrito Federal",
+      "info": "Un distrito federal es un territorio que está bajo soberanía de un Estado federal sin ser parte de ningún estado o provincia integrante de la federación. En los distritos federales tiene jurisdicción directa y exclusiva el Estado central y están bajo la a",
+      "events": [
+        
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Mexico",
+      "info": "El Estado de México, es uno de los 31 estados que junto con el Distrito Federal conforman las 32 entidades federativas de México",
+      "events": [
+        
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Guerrero",
+      "info": "Guerrero es uno de los 31 estados que junto con el Distrito Federal conforman las 32 entidades federativas de México. Su capital es la ciudad de Chilpancingo de los Bravo",
+      "events": [
+        
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Morelos",
+      "info": "Morelos es uno de los 31 estados que junto con el Distrito Federal conforman las 32 entidades federativas de México. Se localiza al centro del territorio nacional.",
+      "events": [
+        
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Puebla\t",
+      "info": "Puebla, officially Free and Sovereign State of Puebla, is one of the 31 states which, with the Federal District, comprise the 32 Federal Entities of Mexico. It is divided in 217 municipalities and its capital city is Puebla.",
+      "events": [
+        
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Nuevo León",
+      "info": "Nuevo León, officially Free and Sovereign State of Nuevo León, is one of the 31 states which, with the Federal District, comprise the 32 Federal Entities of Mexico. It is divided into 51 municipalities and its capital city is Monterrey.",
+      "events": [
+        
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Querétaro",
+      "info": "Querétaro officially Free and Sovereign State of Querétaro (Spanish: Estado Libre y Soberano de Querétaro), is one of 31 states that, with the Federal District, ...",
+      "events": [
+        
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Nayarit",
+      "info": "Nayarit, officially the Free and Sovereign State of Nayarit, is one of the 31 states which, with the Federal District, make up the 32 federal entities of Mexico. It is divided in 20 municipalities and its capital city is Tepic.",
+      "events": [
+        
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Oaxaca",
+      "info": "Oaxaca, officially Free and Sovereign State of Oaxaca, is one of the 31 states which, along with the Federal District, make up the 32 federative entities of Mexico",
+      "events": [
+        
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Quintana Roo",
+      "info": null,
+      "events": [
+        
+      ]
+    },
+    {
+      "id": 24,
+      "name": "San Luis Potosí",
+      "info": null,
+      "events": [
+        
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Sonora",
+      "info": null,
+      "events": [
+        
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Tabasco\t",
+      "info": null,
+      "events": [
+        
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Sinaloa",
+      "info": null,
+      "events": [
+        
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Tamaulipas",
+      "info": null,
+      "events": [
+        
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Veracruz",
+      "info": null,
+      "events": [
+        
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Yucatán",
+      "info": null,
+      "events": [
+        
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Tlaxcala",
+      "info": null,
+      "events": [
+        
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Zacatecas",
+      "info": null,
+      "events": [
+        
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Chiapas",
+      "info": "Chiapas, officially Free and Sovereign State of Chiapas, is one of the 31 states that, with the Federal District, make up the 32 Federal Entities of Mexico. It is divided into 118 municipalities and its capital city is Tuxtla Gutiérrez",
+      "events": [
+        {
+          "id": 7,
+          "name": "Beisbol",
+          "info": "la competencia de besibol mas grande de mexico",
+          "imgurl": "soy la imagen del Besibol",
+          "branches": [
+            "Varonil",
+            "Femenil"
+          ],
+          "categories": [
+            {
+              "id": 5,
+              "name": "Categoria Elite",
+              "info": "La competencia estelar en la cual se contara con la participacion de atletas de renombre internacional y el premio mayor consta de 500mil varos"
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "name": "karate",
+          "info": "soy la competencia de karate mas grande de mexico",
+          "imgurl": "soy la imagen del karate",
+          "branches": [
+            "Varonil",
+            "Femenil"
+          ],
+          "categories": [
+            {
+              "id": 6,
+              "name": "Categoria cinta negra",
+              "info": "la competencia para cintas negras"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Colima",
+      "info": "Colima, officially Free and Sovereign State of Colima, is one of the 31 states that, with the Federal District, make up the 32 Federal Entities of Mexico. It shares its name with its capital and main city, Colima.",
+      "events": [
+        {
+          "id": 7,
+          "name": "Beisbol",
+          "info": "la competencia de besibol mas grande de mexico",
+          "imgurl": "soy la imagen del Besibol",
+          "branches": [
+            "Varonil",
+            "Femenil"
+          ],
+          "categories": [
+            {
+              "id": 5,
+              "name": "Categoria Elite",
+              "info": "La competencia estelar en la cual se contara con la participacion de atletas de renombre internacional y el premio mayor consta de 500mil varos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Baja California Sur",
+      "info": "Baja California Sur, lit. \"Lower California South\", officially Free and Sovereign State of Baja California Sur, is the second smallest Mexican state by population and the 31st admitted state of the 31",
+      "events": [
+        {
+          "id": 4,
+          "name": "waterpolo",
+          "info": "soy una competencia de waterpolo",
+          "imgurl": "soy la imagen del polo acuatico",
+          "branches": [
+            "Varonil",
+            "Femenil"
+          ],
+          "categories": [
+            
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Copa Futbol",
+          "info": "La competencia de futbol mas grande en mexico",
+          "imgurl": null,
+          "branches": [
+            "Varonil",
+            "Femenil"
+          ],
+          "categories": [
+            
+          ]
+        },
+        {
+          "id": 1,
+          "name": "Copa Ciclista",
+          "info": "La competencia de ciclistas mas grande de mexico",
+          "imgurl": null,
+          "branches": [
+            "Varonil",
+            "Femenil"
+          ],
+          "categories": [
+            {
+              "id": 2,
+              "name": "Categoria de 18 a 29",
+              "info": "la categoria para personas de 18 a 29 anos en la cual el premio es de 100mil varos"
+            },
+            {
+              "id": 3,
+              "name": "Categoria de 30 a 39 anos",
+              "info": "la categoria para personas mayores a 30 anos hasta 39 en la cual el primer lugar se podra llevar un premio de 200mil varos"
+            },
+            {
+              "id": 4,
+              "name": "Categoria de 40 y mayores",
+              "info": "la categoria en la que personas mayores de 40 anos podran competir por el primer lugar  el cual consta de 300mil varos"
+            },
+            {
+              "id": 4,
+              "name": "Categoria de 40 y mayores",
+              "info": "la categoria en la que personas mayores de 40 anos podran competir por el primer lugar  el cual consta de 300mil varos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Baja California",
+      "info": "Baja California, officially Free and Sovereign State of Baja California, is the northernmost and westernmost of the 31 states which",
+      "events": [
+        {
+          "id": 2,
+          "name": "Copa Futbol",
+          "info": "La competencia de futbol mas grande en mexico",
+          "imgurl": null,
+          "branches": [
+            "Varonil",
+            "Femenil"
+          ],
+          "categories": [
+            
+          ]
+        },
+        {
+          "id": 1,
+          "name": "Copa Ciclista",
+          "info": "La competencia de ciclistas mas grande de mexico",
+          "imgurl": null,
+          "branches": [
+            "Varonil",
+            "Femenil"
+          ],
+          "categories": [
+            {
+              "id": 2,
+              "name": "Categoria de 18 a 29",
+              "info": "la categoria para personas de 18 a 29 anos en la cual el premio es de 100mil varos"
+            },
+            {
+              "id": 3,
+              "name": "Categoria de 30 a 39 anos",
+              "info": "la categoria para personas mayores a 30 anos hasta 39 en la cual el primer lugar se podra llevar un premio de 200mil varos"
+            },
+            {
+              "id": 4,
+              "name": "Categoria de 40 y mayores",
+              "info": "la categoria en la que personas mayores de 40 anos podran competir por el primer lugar  el cual consta de 300mil varos"
+            },
+            {
+              "id": 4,
+              "name": "Categoria de 40 y mayores",
+              "info": "la categoria en la que personas mayores de 40 anos podran competir por el primer lugar  el cual consta de 300mil varos"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Natacion",
+          "info": "Soy una competencia de natacion ",
+          "imgurl": "soy la imagen ",
+          "branches": [
+            "Varonil",
+            "Femenil"
+          ],
+          "categories": [
+            
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Coahuila",
+      "info": "Coahuila, formally Coahuila de Zaragoza, officially Free and Sovereign State of Coahuila de Zaragoza, is one of the 31 states which, along with the Federal District, compose the 32 Federal Entities of Mexico.",
+      "events": [
+        {
+          "id": 9,
+          "name": "karate",
+          "info": "soy la competencia de karate mas grande de mexico",
+          "imgurl": "soy la imagen del karate",
+          "branches": [
+            "Varonil",
+            "Femenil"
+          ],
+          "categories": [
+            {
+              "id": 6,
+              "name": "Categoria cinta negra",
+              "info": "la competencia para cintas negras"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

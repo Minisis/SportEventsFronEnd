@@ -21,11 +21,27 @@
 			});
 	}])
 
-.controller('TabsController',['$scope', function($scope){
-	$scope.tab = 1
+	.controller('TabsController',['$scope', function($scope){
+		$scope.tab = 1
 
-	$scope.selectTab = function (tab){
-		$scope.tab = tab;
-	};
-}])
+		$scope.selectTab = function (tab){
+			$scope.tab = tab;
+		};
+	}])
+
+	.controller('cvController', ['$scope', '$routeParams', 'cvService', function($scope, $routeParams, cvService){
+
+		var cv = $routeParams.key;
+		$scope.datos = {};
+
+		cvService.getCv(cv)
+			.then(function (result){
+				$scope.datos = result.data;
+				console.log($scope.datos);
+			});
+	}])
 })();
+
+
+
+

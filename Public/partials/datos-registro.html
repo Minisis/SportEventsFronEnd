@@ -1,0 +1,6 @@
+<div>
+	<label for="">HOLA {{datos.name}} {{datos.last}}</label>
+	<label for="" class="">Tu clave de registro: {{datos.key}} fue dada de alta</label>
+	<label for="">el dia {{datos.registeredDate | date:'fullDate'}}</label>
+	<label for="">Te registraste en la sede {{datos.venue.name}} al evento  <span class="label label-success">"{{datos.venue.event.name}}"</span> en la categoria de: {{datos.venue.event.category.name}}</label>
+</div>

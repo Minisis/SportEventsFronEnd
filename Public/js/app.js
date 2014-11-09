@@ -23,6 +23,10 @@
 			.when ('/registro',{
 				templateUrl:'views/registro.html',
 			})
+			.when ('/registro/:key',{
+				templateUrl:'views/registro.html',
+				controller: 'cvController'
+			})
 			.when ('/conocenos',{
 				templateUrl: 'views/conocenos.html'
 			})

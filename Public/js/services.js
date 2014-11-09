@@ -13,7 +13,7 @@
 			}
 
 			function byidSede (id){
-				var deferred = $q.defer()
+				var deferred = $q.defer();
 
 				all().then(function (result){
 					var filtroResult = result.data.filter(function (idSede){
@@ -33,6 +33,22 @@
 			return{
 				all: all,
 				byidSede: byidSede
-			}
-		}]);
+			};
+		}])
+
+		.factory('cvService', ['$http','$q', function ($http, $q){
+			function getCv (cv){
+				var deferred = $q.defer();
+
+				$http.get('http://localhost:3000/person?key=' + cv)
+					.success(function (result){
+						deferred.resolve(result);
+					});
+				return deferred.promise;
+			};
+
+			return{
+				getCv: getCv
+			};
+		}])
 })();

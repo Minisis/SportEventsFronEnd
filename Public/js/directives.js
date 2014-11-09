@@ -8,6 +8,13 @@
 		};
 	})
 
+	.directive('datosRegistro', function(){
+		return {
+			restrict:'E',
+			templateUrl: 'partials/datos-registro.html'
+		};
+	})
+
 	.directive('sedesComments',function(){
 		return{
 			restrict: 'E',
