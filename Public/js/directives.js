@@ -19,7 +19,7 @@
 		return{
 			restrict: 'E',
 			templateUrl: 'partials/sedes-comments.html',
-			controller: function(){
+			controller: function(){ 
 				this.comments = [];
 				this.comment = {};
 				this.show = false;
